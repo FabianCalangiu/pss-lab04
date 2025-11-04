@@ -66,5 +66,16 @@ public final class UseSet {
         /*
          * 6) Verifies whether all the numbers left in the set are even
          */
+        boolean allEven = true;
+
+        for(String s : setOfStrings){
+            n = Integer.parseInt(s);
+            if(n % 2 != 0){
+                allEven = false;
+                break;
+            }
+        }
+
+        System.out.println("Are all items in 'setOfStrings' even? " + allEven);
     }
 }
