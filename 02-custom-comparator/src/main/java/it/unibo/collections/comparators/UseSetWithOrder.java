@@ -29,14 +29,18 @@ public final class UseSetWithOrder {
          */
         Comparator<String> ValueComparator = new SortByValue();
         TreeSet<String> setOfStrings = new TreeSet<>(ValueComparator);
-
-        System.out.println("Sorted TreeSet by custom comparator: " + setOfStrings);
         /*
          * 2) Inserts in the set a hundred strings containing randomly generated numbers
          * (use Math.random(), and convert to String appropriately)
          */
+        String str;
+        for(int i = 0; i < 100; i++){
+            str = String.valueOf(Math.random());
+            setOfStrings.add(str);
+        }
         /*
          * 3) Prints the set, which must be ordered
          */
+        System.out.println("'setOfStrings ordered TreeSet: " + setOfStrings);
     }
 }
