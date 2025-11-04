@@ -1,5 +1,6 @@
 package it.unibo.collections.sets;
 
+import java.nio.channels.Pipe.SourceChannel;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.TreeSet;
@@ -59,6 +60,9 @@ public final class UseSet {
         /*
          * 5) Prints the content of the Set using a for-each construct
          */
+        for(String s : setOfStrings){
+            System.out.println(s);
+        }
         /*
          * 6) Verifies whether all the numbers left in the set are even
          */
